@@ -2,7 +2,11 @@ import "./App.css";
 import XmasCard from "./XmasCard";
 
 function App() {
-  return <XmasCard />;
+  return (
+    <>
+      <XmasCard />
+    </>
+  );
 }
 
 export default App;

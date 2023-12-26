@@ -15,6 +15,7 @@ import Tooltip from "@mui/material/Tooltip";
 import AcUnitIcon from "@mui/icons-material/AcUnit";
 import snowmanAnimation from "./assets/Animation - 1703597488040.json";
 import giftsAnimation from "./assets/Animation - 1703600873275.json";
+
 import Lottie from "lottie-react";
 import Stack from "@mui/material/Stack";
 import Divider from "@mui/material/Divider";
@@ -42,8 +43,17 @@ const XmasCard: React.FC = () => {
     setShowSnowman(!showSnowman);
   };
 
+  const onComplete = () => {
+    setIsPlaying(false);
+  };
+
   return (
     <>
+      <Lottie
+        animationData={giftsAnimation}
+        loop={false}
+        onComplete={onComplete}
+      />
       <Card
         sx={{
           width: "40rem",
@@ -112,7 +122,6 @@ const XmasCard: React.FC = () => {
             your heart glow. Here's to a season wrapped in warmth and all the
             good vibes!
           </Typography>
-          {/* <Lottie animationData={giftsAnimation} loop={true} /> */}
         </CardContent>
       </Card>
     </>
