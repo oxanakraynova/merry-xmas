@@ -2,9 +2,9 @@ import { useState } from "react";
 import useSound from "use-sound";
 import sound from "../assets/dance-of-the-sugar-plum-fairy-tchaikovsky-165957.mp3";
 import Tooltip from "@mui/material/Tooltip";
-import IconButton from "@mui/material/IconButton";
 import PlayArrowIcon from "@mui/icons-material/PlayArrow";
 import StopIcon from "@mui/icons-material/Stop";
+import { StyledIcon } from "../styles";
 
 function Music() {
   const [play, { stop }] = useSound(sound);
@@ -22,9 +22,9 @@ function Music() {
   return (
     <>
       <Tooltip title={isPlaying ? "Turn off the music" : "Turn on the music"}>
-        <IconButton color="success" onClick={handleCarolSinging}>
+        <StyledIcon color="success" onClick={handleCarolSinging}>
           {isPlaying ? <StopIcon /> : <PlayArrowIcon />}
-        </IconButton>
+        </StyledIcon>
       </Tooltip>
     </>
   );

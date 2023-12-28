@@ -1,9 +1,9 @@
 import { useState } from "react";
 import Tooltip from "@mui/material/Tooltip";
-import IconButton from "@mui/material/IconButton";
 import StopIcon from "@mui/icons-material/Stop";
 import Snowfall from "react-snowfall";
 import AcUnitIcon from "@mui/icons-material/AcUnit";
+import { StyledIcon } from "../styles";
 
 function Snowflakes() {
   const [showSnowfall, setShowSnowfall] = useState(false);
@@ -15,9 +15,9 @@ function Snowflakes() {
   return (
     <>
       <Tooltip title={showSnowfall ? "Stop animation" : "Show Snowfall"}>
-        <IconButton color="info" onClick={handleSnowfall}>
+        <StyledIcon color="info" onClick={handleSnowfall}>
           {showSnowfall ? <StopIcon /> : <AcUnitIcon />}
-        </IconButton>
+        </StyledIcon>
       </Tooltip>
       {showSnowfall && <Snowfall snowflakeCount={50} style={{ zIndex: 2 }} />}
     </>

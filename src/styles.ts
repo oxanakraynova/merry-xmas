@@ -3,6 +3,7 @@ import Card from "@mui/material/Card";
 import Typography from "@mui/material/Typography";
 import Stack from "@mui/material/Stack";
 import CardMedia from "@mui/material/CardMedia";
+import IconButton from "@mui/material/IconButton";
 
 export const HolidayCard = styled(Card)({
   width: "40rem",
@@ -32,4 +33,10 @@ export const StyledStack = styled(Stack)(({ theme }) => ({
 
 export const StyledCardMedia = styled(CardMedia)({
   height: "20rem",
+});
+
+export const StyledIcon = styled(IconButton)({
+  "&:active": {
+    backgroundColor: "#334252",
+  },
 });

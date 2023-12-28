@@ -54,9 +54,9 @@ const XmasCard: React.FC = () => {
           )}
           {showGreeting && (
             <Typography variant="body1" gutterBottom color="#f5f5f5">
-              May happiness, health and well-being come with this bright
-              holiday. I wish you all new achievements and success in all your
-              endeavors. May your cherished desires and dreams come true!
+              May happiness, health, and well-being accompany you this bright
+              holiday season. I wish you new achievements and success in all
+              your endeavors. May your cherished desires and dreams come true!
             </Typography>
           )}
         </CardContent>

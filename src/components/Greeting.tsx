@@ -1,7 +1,7 @@
 import Tooltip from "@mui/material/Tooltip";
-import IconButton from "@mui/material/IconButton";
 import AutoAwesomeIcon from "@mui/icons-material/AutoAwesome";
 import CloseIcon from "@mui/icons-material/Close";
+import { StyledIcon } from "../styles";
 
 interface Props {
   showGreeting: boolean;
@@ -12,9 +12,9 @@ const Greeting: React.FC<Props> = ({ showGreeting, handleGreeting }) => {
   return (
     <>
       <Tooltip title={showGreeting ? "Hide Greeting" : "Show Greeting"}>
-        <IconButton color="warning" onClick={handleGreeting}>
+        <StyledIcon color="warning" onClick={handleGreeting}>
           {showGreeting ? <CloseIcon /> : <AutoAwesomeIcon />}
-        </IconButton>
+        </StyledIcon>
       </Tooltip>
     </>
   );
