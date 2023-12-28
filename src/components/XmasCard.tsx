@@ -41,11 +41,14 @@ const XmasCard: React.FC = () => {
             spacing={2}
             divider={<Divider orientation="vertical" flexItem />}
           >
-            <Greeting showGreeting={false} handleGreeting={handleGreeting} />
+            <Greeting
+              showGreeting={showGreeting}
+              handleGreeting={handleGreeting}
+            />
             <Snowflakes />
             <Music />
             <Snowman
-              showSnowman={false}
+              showSnowman={showSnowman}
               handleSnowmanAppearance={handleSnowmanAppearance}
             />
           </StyledStack>
