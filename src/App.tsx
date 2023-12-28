@@ -1,5 +1,5 @@
 import "./App.css";
-import XmasCard from "./XmasCard";
+import XmasCard from "./components/XmasCard";
 
 function App() {
   return (
