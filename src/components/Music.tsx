@@ -21,7 +21,7 @@ function Music() {
 
   return (
     <>
-      <Tooltip title={isPlaying ? "Turn off the music" : "Turn on the music"}>
+      <Tooltip title={isPlaying ? "Stop Music" : "Play Music"}>
         <StyledIcon color="success" onClick={handleCarolSinging}>
           {isPlaying ? <StopIcon /> : <PlayArrowIcon />}
         </StyledIcon>
